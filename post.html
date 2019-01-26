@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <title>Blog UI</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/extra.1.0.0.css"  media="screen,projection"/>
+      <!-- font icons -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">      
+    </head>
+
+    <body>
+       <!-- header -->
+       <div class="navbar-fixed">
+         <nav class="header white">
+            <div class="container">
+               <div class="nav-wrapper">
+                  <div class="logo">  
+                     <a href="#">
+                        <img src="images/logo.svg" alt="Logo | Nivelo">
+                     </a>
+                  </div>
+                  <ul class="right">
+                     <li><a href="#" class="black-text btn transparent z-depth-0"> <span class="fas fa-search fa-lg"></span> </a></li>
+                     <li><a href="#" class="black-text btn z-depth-0 radius-4 grey lighten-3">Get Started </a></li>
+                     <li><a href="#" class="black-text btn transparent dropdown-trigger z-depth-0"  data-target='dropProfile'> <span class="far fa-user fa-lg"></span> </a></li>
+                  </ul>
+                   <!-- Dropdown Structure -->
+                  <ul id='dropProfile' class='dropdown-content' style="width:350px!important">
+                     <li><a href="#!">Profile</a></li>
+                     <li><a href="#!">Control Panel</a></li>
+                     <li class="divider" tabindex="-1"></li>
+                     <li><a href="#!">Logout</a></li>
+                     <li class="divider" tabindex="-1"></li>
+                     <li><a href="#!">Help</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+      <div class="container">
+         <div class="row">
+            <div class="col s12 m12 l10 push-l1">
+               <h1 class="xxl-text bold">
+                  Angular Optimization. Memoized pipe functions in templates.
+               </h1>
+               <!-- metadata -->
+               <div>
+                  <span>Jan 26</span>
+                  &nbsp;&nbsp; by 
+                  <a href="#" class="bold">John Doe</a>
+                  <span class="right">
+                     <a href="#">Share</a>
+                  </span>
+               </div>
+               <!-- post contents -->
+               <div class="wrappost">
+                  <p>Nowadays we always try to be on a short leg with the current rapidly developing technologies and optimize our applications to make them faster, provide better user experience or update legacy code. If You are reading this article, then you’re looking for new approaches or You have an interest in how to upgrade your application and make it cooler. So, let’s begin!</p>
+                  <p>Optimization in Angular application could be reached by passing some points, like: Correct decomposition of components; Using change detection strategy OnPush; Managing all subscriptions in the project. We have plenty of ways to do that, however, today I will try to explain one uncommon and rarely used case, nevertheless, it’s worth a lot and could increase the performance of our applications and make them more optimized.</p>
+                  <blockquote>
+                        “Motivation is literally the desire to do things. It’s the difference between waking up before dawn to pound the pavement and lazing around the house all day. It’s the crucial element in setting and attaining goals — and research shows you can influence your own levels of self-motivation and self-control.” — From Psychology Today
+                  </blockquote>
+                  <p>
+                     <img src="images/todo.jpg" alt="">
+                  </p>
+                  <p>These challenges take about 10 to 30 minutes to complete and you'll have them delivered to your inbox so you are never left out. Also, you can find them on the Scotch Challenge page. The challenge will be solved in a livestream with thousands of Scotchers watching. Don't worry, if you miss a livestream, we'll also have it delivered to your inbox.</p>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $(function(){
+         $('.dropdown-trigger').dropdown({
+            'hover':false,
+            'coverTrigger':false,
+            'alignment':'right'
+         });
+      })
+      </script>
+    </body>
+  </html>
+        
