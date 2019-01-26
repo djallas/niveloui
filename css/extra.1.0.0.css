@@ -6,6 +6,9 @@ a{color: #000000}
 .np{padding: 0!important}
 .nm{margin: 0!important}
 .nb{border:none!important}
+/* company logo */
+.logo{margin:0;overflow: hidden;}
+.logo img{height: auto;;}
 /*logo*/
 .image{width: 100%;}
 .image img{width: 100%;height: auto}
