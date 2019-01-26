@@ -14,32 +14,35 @@
     <body>
        <!-- header -->
        <div class="navbar-fixed">
-         <nav class="header white">
-            <div class="container">
-               <div class="nav-wrapper">
-                  <div class="logo">  
-                     <a href="#">
-                        <img src="images/logo.svg" alt="Logo | Nivelo">
-                     </a>
+            <nav class="header white">
+               <div class="container">
+                  <div class="nav-wrapper">
+                     <ul class="left">
+                        <li><a href="#" class="black-text transparent"> <span class="fas fa-bars fa-lg"></span> </a></li>
+                     </ul>
+                     <div class="logo hide-on-small-only left">  
+                        <a href="#">
+                           <img src="images/logo.svg" alt="Logo | Nivelo">
+                        </a>
+                     </div>
+                     <ul class="right">
+                        <li><a href="#" class="black-text transparent"> <span class="fas fa-search fa-lg"></span> </a></li>
+                        <li class="hide-on-med-and-down"><a href="#" class="black-text btn z-depth-0 radius-4 grey lighten-3">Get Started </a></li>
+                        <li><a href="#" class="black-text transparent dropdown-trigger"  data-target='dropProfile'> <span class="far fa-user fa-lg"></span> </a></li>
+                     </ul>
+                      <!-- Dropdown Structure -->
+                     <ul id='dropProfile' class='dropdown-content' style="width:350px!important">
+                        <li><a href="#!">Profile</a></li>
+                        <li><a href="#!">Control Panel</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!">Logout</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!">Help</a></li>
+                     </ul>
                   </div>
-                  <ul class="right">
-                     <li><a href="#" class="black-text btn transparent z-depth-0"> <span class="fas fa-search fa-lg"></span> </a></li>
-                     <li class="hide-on-med-and-down"><a href="#" class="black-text btn z-depth-0 radius-4 grey lighten-3">Get Started </a></li>
-                     <li><a href="#" class="black-text btn transparent dropdown-trigger z-depth-0"  data-target='dropProfile'> <span class="far fa-user fa-lg"></span> </a></li>
-                  </ul>
-                   <!-- Dropdown Structure -->
-                  <ul id='dropProfile' class='dropdown-content' style="width:350px!important">
-                     <li><a href="#!">Profile</a></li>
-                     <li><a href="#!">Control Panel</a></li>
-                     <li class="divider" tabindex="-1"></li>
-                     <li><a href="#!">Logout</a></li>
-                     <li class="divider" tabindex="-1"></li>
-                     <li><a href="#!">Help</a></li>
-                  </ul>
                </div>
-            </div>
-         </nav>
-      </div>
+            </nav>
+         </div>
 
       <div class="container">
          <div class="row">
